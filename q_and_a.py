@@ -6,6 +6,7 @@ import pandas as pd  # for storing text and embeddings data
 import tiktoken  # for counting tokens
 from scipy import spatial  # for calculating vector similarities for search
 from dotenv import load_dotenv
+from flask import Flask, request, jsonify
 
 # models
 EMBEDDING_MODEL = "text-embedding-ada-002"
@@ -92,5 +93,6 @@ def ask(
     response_message = response["choices"][0]["message"]["content"]
     print(response_message)
     return response_message
+    # return jsonify({'response': response_message})
 
-ask('What is aging?')
+# ask('What is aging?')
