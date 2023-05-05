@@ -28,7 +28,7 @@ export default function FileQandA() {
           maxNumFiles={75}
           maxFileSizeMB={30}
         />
-*/}
+        */}
 
         <FileQandAArea files={files} />
       </div>
