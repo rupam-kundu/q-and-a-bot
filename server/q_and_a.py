@@ -93,6 +93,4 @@ def ask(
     response_message = response["choices"][0]["message"]["content"]
     print(response_message)
     return response_message
-    # return jsonify({'response': response_message})
-
-# ask('What is aging?')
+    
