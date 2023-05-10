@@ -2,14 +2,14 @@ from flask import Flask, request
 from flask_cors import CORS, cross_origin
 from q_and_a import ask
 
-app = Flask(__name__)
-CORS(app, supports_credentials=True)
+application = Flask(__name__)
+CORS(application, supports_credentials=True)
 
-@app.route("/")
+@application.route("/")
 def health_check():
     return "OK"
 
-@app.route(f"/answer_question", methods=["POST"])
+@application.route(f"/answer_question", methods=["POST"])
 @cross_origin(supports_credentials=True)
 def answer_question():
     try:
@@ -21,4 +21,5 @@ def answer_question():
         return str(e)
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    # application.run(debug=True)
+    application.run()
