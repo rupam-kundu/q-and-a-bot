@@ -16,7 +16,7 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # embeddings_path = ".\embeddings.csv"
-embeddings_path = ".\embeddings.csv"
+embeddings_path = "./embeddings.csv"
 
 df = pd.read_csv(embeddings_path)
 
