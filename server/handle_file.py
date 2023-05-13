@@ -45,8 +45,9 @@ def chunks(text, n, tokenizer):
 
 def get_embeddings(text_array, engine):
     load_dotenv()
-    openai.api_key = os.getenv("OPENAI_API_KEY")
-    # openai.api_key = os.environ["OPENAI_API_KEY"]
+    # openai.api_key = os.getenv("OPENAI_API_KEY")
+    openai.api_key = os.environ["OPENAI_API_KEY"]
+    
     # Parameters for exponential backoff
     max_retries = 5 # Maximum number of retries
     base_delay = 1 # Base delay in seconds

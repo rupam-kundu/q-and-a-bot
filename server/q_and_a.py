@@ -13,8 +13,8 @@ EMBEDDING_MODEL = "text-embedding-ada-002"
 GPT_MODEL = "gpt-3.5-turbo"
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
-# openai.api_key = os.environ["OPENAI_API_KEY"]
+# openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # embeddings_path = ".\embeddings.csv"
 embeddings_path = "./embeddings.csv"
