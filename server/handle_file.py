@@ -123,7 +123,7 @@ def handle_file_string(filename, file_body_string, tokenizer):
 # Handle a file by extracting its text, creating embeddings, and upserting them to Pinecone
 def handle_file(filename):
     # tokenizer = tiktoken.get_encoding("gpt2")
-    tokenizer = tiktoken.encoding_for_model("gpt-3.5-turbo")
+    tokenizer = tiktoken.encoding_for_model("gpt-4")
 
     # Extract text from the file
     extracted_text = extract_text_from_file(filename)
