@@ -10,7 +10,7 @@ from flask import Flask, request, jsonify
 
 # models
 EMBEDDING_MODEL = "text-embedding-ada-002"
-GPT_MODEL = "gpt-3.5-turbo"
+GPT_MODEL = "gpt-4"
 
 load_dotenv()
 # openai.api_key = os.getenv("OPENAI_API_KEY")
