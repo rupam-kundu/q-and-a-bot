@@ -1,4 +1,4 @@
-# q-and-a-bot
+# file-q-and-a-bot
 
 This is a question answering bot that lets you find answers in research papers in Life Sciences using OpenAI's GPT-4 API. 
 
