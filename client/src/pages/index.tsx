@@ -11,10 +11,10 @@ export default function FileQandA() {
   return (
     <div className="flex items-center text-left h-screen flex-col">
       <Head>
-        <title>Q&A Bot</title>
+        <title>File Q&A Bot</title>
       </Head>
       <div className="max-w-xl w-full mx-auto m-8 space-y-8 text-gray-800">
-        <h1 className="flex justify-center text-4xl">Q&A Bot</h1>
+        <h1 className="flex justify-center text-4xl">File Q&A Bot</h1>
 
         {/* 
         <div className="">
